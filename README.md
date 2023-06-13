@@ -2,8 +2,8 @@
 # fluid-simulator
 A numerical fluid simulator that I programmed a couple years ago
 
-
 Example image:
+
 ![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/theFluidSim.gif)
 
 
