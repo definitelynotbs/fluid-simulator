@@ -1,4 +1,12 @@
 
+# fluid-simulator
+A numerical fluid simulator that I programmed a couple years ago
+
+
+Example image:
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/theFluidSim.gif)
+
+
 ##06/02/23## Brandon Statner
 
 This is a project I worked on for my computational physics course at UCSB 2 years ago in the summer of 2021 under professor Everett Lipman. I had initially intended to make a program that could simulate a flame flickering in the air. The first step of that problem was to simulate air, which meant simulating a fluid. This task ended up proving much more difficult than expected and required many hours of study and coding. I achieved a reasonable fluid simulation, but did not have time in the short (5wk) summer course to figure out how to accurately model a flame given the added levels of complexity for that problem. That being said, I feel my program is quite an accomplishment. The program- executable through fluid_sim.py - allows the user to specify size of the simulation, and add dye, wind , and temperature to the "substance". Interesting results are attainable with the right input, and included in sample_images are some snapshots and gifs of my own experiments. I hope you enjoy looking at it, using it, and playing with the program.
@@ -95,11 +103,19 @@ Sample Images:
 
 demo.gif: An attempt at modeling temperature diffusion, which I was not able to perfectly optimize for visually convincing results
 
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/demo.gif)
+
+
 fig1 and fig2 .eps files: Snapshots of a couple experiments of mine, demonstrating the interesting visual results and dynamics of program.
+
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/fig1.pdf)
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/fig2.pdf)
 
 theFluidSim.gif: The resulting simulation from a very large fluid with wind programmed to hit a "flame" at a fairly high speed coming from the right. Visual results are quite interesting and entertaining when attention is paid to the detailed, fractal-type patterns. This simulation took quite some time.
 
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/myFluidSim.gif)
+
+
 myFluidSim.gif: Similarly resultant experiment but from a fairly small fluid. A quicker simulation with less visually appealing results. Includes a block of dye inserted (by user input) into center of the fluid.
 
-
-
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/theFluidSim.gif)
