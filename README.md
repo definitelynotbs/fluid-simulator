@@ -2,7 +2,7 @@
 # fluid-simulator
 A numerical fluid simulator that I programmed a couple years ago
 
-Example image:
+Example gif:
 
 ![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/theFluidSim.gif)
 
@@ -106,16 +106,13 @@ demo.gif: An attempt at modeling temperature diffusion, which I was not able to 
 ![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/demo.gif)
 
 
-fig1 and fig2 .eps files: Snapshots of a couple experiments of mine, demonstrating the interesting visual results and dynamics of program.
-
-![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/fig1.pdf)
-![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/fig2.pdf)
+fig1 and fig2 .pdf files: Snapshots of a couple experiments of mine, demonstrating the interesting visual results and dynamics of program.
 
 theFluidSim.gif: The resulting simulation from a very large fluid with wind programmed to hit a "flame" at a fairly high speed coming from the right. Visual results are quite interesting and entertaining when attention is paid to the detailed, fractal-type patterns. This simulation took quite some time.
 
-![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/myFluidSim.gif)
-
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/theFluidSim.gif)
 
 myFluidSim.gif: Similarly resultant experiment but from a fairly small fluid. A quicker simulation with less visually appealing results. Includes a block of dye inserted (by user input) into center of the fluid.
 
-![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/theFluidSim.gif)
+![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/myFluidSim.gif)
+
