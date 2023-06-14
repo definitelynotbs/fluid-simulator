@@ -56,26 +56,26 @@ was first described by Jos Stam in his paper "Stable Fluids" (https://d2f99xq7vr
 It is only a couple of pages long, so if you are interested there is that too.
 
 
-We basically fill up a grid with "particles" that aren't actually particles, but eulerian style vectors representing the state of the fluid, then we numerically approximate their behavior under the forces described above.
+We first fill up a grid with "particles" that aren't actually particles, but eulerian-style vectors representing the state of the fluid, then we numerically approximate their behavior under the forces described above.
 
-The numerical method is basically just splitting the Navier-Stokes equation up into those parts that I detailed above, and then approximating their effect for a small time-step DT. 
+The numerical method used consists of splitting the Navier-Stokes equation up into those parts that I detailed above, and then approximating the effect of each for a small time-step DT. 
 
-For advection, we model it by tracing the velocities of the particles back to a different point on the field and mapping that positions current speed and other quantities(dye, temp) to the current position in the next frame.
+Advection is modeled by tracing the velocities of the particles back to a different point on the field and mapping that positions current speed and other quantities(dye, temp) to the current position in the next frame.
 
-Then we apply outside forces, to all fluid particles. For my program this is just gravity. I tried to incorporate a boussinesq approximation to make the temperature of particles in my system significant, but it didn't really work all that well.
+Then we apply outside forces to all fluid particles. For my program this is just gravity. I tried to incorporate a boussinesq approximation to make the temperature of particles in my system significant, but it didn't really work all that well.
 
-Then the divergence of the field is calculated, and used in a poisson equation to calculate the pressure field for the fluid at that frame
+Then the divergence of the field is calculated, and is then used in a poisson equation to calculate the pressure field for the fluid in that time-slice
 laplacian( pressure ) = div( U )
 
 Which is a linear equation of sparse matrices which is then solved numerically using numpy and used to approximate the effect of pressure on the system
 
 U' = U - grad ( pressure ) * dt
 
-Once that was all working smoothly, I put quantities of "dye" and "temperature" into the fluid which get advected along with the fluid itself and then plug those into a color map to get a visualization of the movement.
+Once that was all working smoothly, I put quantities of "dye" and "temperature" into the fluid which get advected along with the fluid itself. These values are then plugged into a color map to get a visualization of the system.
 
 Once that was working I wrote a simple User interactive program that allows the user to specify the details of the simulation- dump "dye" into the water (they can only draw with rectangles perpendicular to the axes), and swirl it up by adding "wind" into the system.
 
-Besides some of the linear algebra, the code is all quite simple. I did not have time to perfect the documentation, but its not too bad.
+Besides some of the linear algebra, the code is all quite simple.
 
 I should also note that some basic code/methods were informed by the below sources; particularly with regards to the solving of the poisson equation and boundary conditions with numpy.
 
