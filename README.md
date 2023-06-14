@@ -19,7 +19,7 @@ Program simulates a fluid in 2D and visualizes the movement.
 Provides user interactivity for modeling their own fluid.
 
 
-Using the Eulerian Scheme, a fluid can be represented by a vector-field (U)
+Using the Eulerian Scheme, a fluid can be represented by a field of vectors (U)
 that represent the velocity of the fluid at the point of the
 relevant vector. The evolution of these vectors is governed by the Navier-Stokes
 equations. The equations are basically just Newton's law for fluids:
