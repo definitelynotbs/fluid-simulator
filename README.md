@@ -89,7 +89,7 @@ Thanks for everything, and have a fantastic summer!
 
 Files:
 
-Python Scripts 
+Python Scripts:
 
 Fluid.py - Fluid object represents model of the fluid-vector system and contains functions for its evolution.
 
