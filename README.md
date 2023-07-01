@@ -80,6 +80,7 @@ Besides some of the linear algebra, the code is all quite simple.
 I should also note that some basic code/methods were informed by the below sources; particularly with regards to the solving of the poisson equation and boundary conditions with numpy.
 
 https://github.com/GregTJ/stable-fluids
+
 http://www.philipzucker.com/annihilating-my-friend-will-with-a-python-fluid-simulation-like-the-cur-he-is/
 
 Again, I hope you can have some fun with it.
