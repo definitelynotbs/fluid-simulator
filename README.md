@@ -109,7 +109,7 @@ demo.gif: An attempt at modeling temperature diffusion, which I was not able to 
 
 fig1 and fig2 .pdf files: Snapshots of a couple experiments of mine, demonstrating the interesting visual results and dynamics of program.
 
-theFluidSim.gif: The resulting simulation from a very large fluid with wind programmed to hit a "flame" at a fairly high speed coming from the right. Visual results are quite interesting and entertaining when attention is paid to the detailed, fractal-type patterns. This simulation took quite some time.
+theFluidSim.gif: The resulting simulation from a very large fluid with wind programmed to hit a "flame" at a fairly high speed coming from the right. Visual results are quite interesting and entertaining when attention is paid to the detailed, fractal-type patterns. This simulation took quite some time. Fluid on top of screen is a result of semi-open boundary conditions.
 
 ![](https://github.com/definitelynotbs/fluid-simulator/blob/master/sample_images/theFluidSim.gif)
 
